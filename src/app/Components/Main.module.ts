@@ -11,7 +11,6 @@ import { UserProfileComponent } from "./Components/UserProfile/UserProfile.compo
 
 @NgModule({
   declarations: [
-    AppComponent,
     MainComponent,
     HomeScreenComponent,
     SearchResultComponent,
@@ -22,6 +21,19 @@ import { UserProfileComponent } from "./Components/UserProfile/UserProfile.compo
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MainComponent],
 })
-export class AppModule { }
+export class AppModule {
+
+    SetContentDivToHomeComponent() {
+        // set HomeComponent as child of <div class=content></div>
+    }
+
+    SetContentDivToSearchResultComponent() {
+        // set SearchResultComponent as child of <div class=content></div>
+    }
+
+    SetContentDivToUserProfile() {
+        // set UserProfileComponent as child of <div class=content></div>
+    }
+}
